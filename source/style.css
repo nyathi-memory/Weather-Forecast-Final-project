@@ -3,7 +3,8 @@ body{
   font-family: "Roboto", sans-serif;
   }
   a{
-    color: #7758D1;
+    color: #ffffff;
+    text-decoration: none;
   }
   header{
     border-bottom: 1px solid whitesmoke;
@@ -13,6 +14,7 @@ body{
     margin: 0;
     font-size: 38px;
     line-height: 48px;
+    color: #ffffff;
   }
   .app{
     background: radial-gradient(circle, rgba(247, 203, 253, 1), rgba(164, 153, 192, 1));
@@ -31,11 +33,12 @@ body{
     
   }
   .app-details strong {
-    color: #7758D1;
+    color: #ffffff;
   }
   .app-temperature{
     display: flex;
     margin-left: 10px;
+    color: #ffffff;
   }
   .forecast{
     display: flex;
@@ -61,7 +64,7 @@ body{
     text-align: center;
     font-size: 16px;
     margin-top: 10px;
-    color: #7758D1;
+    color: #ffffff;
     display: flex;
     justify-content: center;
 
@@ -92,17 +95,17 @@ body{
 }
 
 .search-form-button{
-background-color: #7758D1;
+background-color: #ffffff;
 padding: 15px 30px;
 font-size: 16px;
 border: none;
 border-radius: 6px;
-color: white;
+color: rgba(0, 0, 0, 0.6);
 margin-left: 5px;
 }
 .search-form-button:hover{
   background:#fff;
-  color: #7758D1;
+  color: #A499C0;
   cursor: pointer;
 }
 main{
@@ -115,9 +118,8 @@ main{
 }
 
 footer{
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: none;
     padding: 30px 0 0 0 0;
     text-align: center;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
   }
