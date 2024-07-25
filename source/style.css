@@ -1,10 +1,9 @@
 body{
-    background-color: whitesmoke;
-    font-family: "Roboto", sans-serif;
-
+  background-color:#ffffff;
+  font-family: "Roboto", sans-serif;
   }
   a{
-    color: #c54c82;
+    color: #7758D1;
   }
   header{
     border-bottom: 1px solid whitesmoke;
@@ -16,10 +15,11 @@ body{
     line-height: 48px;
   }
   .app{
-    background-color: #f4aeba;
-    max-width: 600px;
+    background: radial-gradient(circle, rgba(247, 203, 253, 1), rgba(164, 153, 192, 1));
+    max-width: 700px;
     margin: 45px auto;
-    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    box-shadow: 
+    10px 10px 20px rgba(247, 203, 253, 0.7); /* Shadow with color #F7CBFD */
     border-radius: 16px;
     padding: 30px;
   }
@@ -31,7 +31,7 @@ body{
     
   }
   .app-details strong {
-    color: #6643b5;
+    color: #7758D1;
   }
   .app-temperature{
     display: flex;
@@ -61,7 +61,7 @@ body{
     text-align: center;
     font-size: 16px;
     margin-top: 10px;
-    color: #6643b5;
+    color: #7758D1;
     display: flex;
     justify-content: center;
 
@@ -92,13 +92,18 @@ body{
 }
 
 .search-form-button{
-background-color: #ec729c;
+background-color: #7758D1;
 padding: 15px 30px;
 font-size: 16px;
 border: none;
 border-radius: 6px;
-color: #c54c82;
+color: white;
 margin-left: 5px;
+}
+.search-form-button:hover{
+  background:#fff;
+  color: #7758D1;
+  cursor: pointer;
 }
 main{
     padding: 30px 0;

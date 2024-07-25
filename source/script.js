@@ -28,14 +28,24 @@ function formatDate(timestamp) {
     "Saturday"
   ];
   let day = days[date.getDay()];
-  //if minutes are lower than 10, add 0
+  
+  // Format hours and minutes
+  let hours = date.getHours();
   let minutes = date.getMinutes();
+  
+  // Add leading zero for hours if less than 10
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  
+  // Add leading zero for minutes if less than 10
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
   
-  return `${day} ${date.getHours()}:${date.getMinutes()}`;
+  return `${day} ${hours}:${minutes}`;
 }
+
   function searchCity(city){
 
     let apiKey = "3096aob3bd9034ff0bt0a3f61281ee49";
@@ -46,8 +56,7 @@ function formatDate(timestamp) {
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchIput = document.querySelector("#search-form-input");
-  let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = searchIput.value;
+
   searchCity(searchIput.value);
 }
 function formatDay(timestamp){
@@ -65,7 +74,7 @@ function formatDay(timestamp){
 
   function displayForecast(response){
     let forecastHTML = "";
-    
+
     response.data.daily.forEach(function(day, index){
       if (index < 5) {
       forecastHTML =
@@ -95,6 +104,6 @@ function formatDay(timestamp){
   searchFormElement.addEventListener("submit", handleSearchSubmit);
 
   
-  displayForecast();
+  searchCity("Johannesburg");
   
  
